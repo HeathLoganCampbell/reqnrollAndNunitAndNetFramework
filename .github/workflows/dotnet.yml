@@ -15,16 +15,19 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: 8.0.x
-    - name: Install .NET Framework 4.8 Developer Pack
+    
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1
+      
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v1.0.2
+      
+    - name: Restore Packages
+      run: nuget restore ReqnrollXNunit.sln
+
+    - name: Build Solution
       run: |
-        choco install netfx-4.8-devpack --confirm
-    - name: Restore dependencies
-      run: dotnet restore
-    - name: Build
-      run: dotnet build --no-restore
+        msbuild.exe ReqnrollXNunit.sln /nologo
+        
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test --no-build --verbosity normal --logger "trx"
