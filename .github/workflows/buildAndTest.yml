@@ -39,4 +39,10 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: TestResults
-        path: ReqnrollXNunit.Tests/TestResults/TestResults.trx
+        path: ReqnrollXNunit.Tests.Reqnroll/TestResults/TestResults.trx
+
+    - name: Upload Test Results
+      uses: actions/upload-artifact@v4
+      with:
+        name: TestResults
+        path: ReqnrollXNunit.Tests.Nunit/TestResults/TestResults.trx
