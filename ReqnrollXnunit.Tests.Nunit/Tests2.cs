@@ -17,5 +17,20 @@ namespace ReqnrollXnunit.Tests.Classic
         {
             Assert.True(true);
         }
+
+        public class Monkies
+        {
+            [Test]
+            public void Test3()
+            {
+                Assert.True(true);
+            }
+            
+            [Test]
+            public void Test4()
+            {
+                Assert.True(true);
+            }
+        }
     }
 }
