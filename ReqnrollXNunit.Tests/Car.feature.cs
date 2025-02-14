@@ -102,6 +102,36 @@ namespace ReqnrollXNunit.Tests
             }
             await this.ScenarioCleanupAsync();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Stop the car with no fuel")]
+        public async System.Threading.Tasks.Task StopTheCarWithNoFuel()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            Reqnroll.ScenarioInfo scenarioInfo = new Reqnroll.ScenarioInfo("Stop the car with no fuel", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 7
+    this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+#line 8
+        await testRunner.GivenAsync("the car has insufficient fuel", ((string)(null)), ((Reqnroll.Table)(null)), "Given ");
+#line hidden
+#line 9
+        await testRunner.WhenAsync("I turn the ignition key", ((string)(null)), ((Reqnroll.Table)(null)), "When ");
+#line hidden
+#line 10
+        await testRunner.ThenAsync("the engine should start", ((string)(null)), ((Reqnroll.Table)(null)), "Then ");
+#line hidden
+            }
+            await this.ScenarioCleanupAsync();
+        }
     }
 }
 #pragma warning restore
