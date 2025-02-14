@@ -44,5 +44,5 @@ jobs:
     - name: Upload Test Results
       uses: actions/upload-artifact@v4
       with:
-        name: TestResults-${{ github.run_id }}-${{ github.run_attempt }}-reqnroll
+        name: TestResults-${{ github.run_id }}-${{ github.run_attempt }}-nunit
         path: ReqnrollXNunit.Tests.Nunit/TestResults/TestResults.trx
