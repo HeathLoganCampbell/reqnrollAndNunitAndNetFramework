@@ -3,7 +3,7 @@ using NUnit.Framework;
 
 namespace ReqnrollXnunit.Tests.Classic
 {
-    [TestFixture]
+    [TestFixture, Category("Tests1")]
     public class Tests
     {
         [Test]
