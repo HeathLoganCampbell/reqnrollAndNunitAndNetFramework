@@ -18,7 +18,7 @@
         <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
         <RootNamespace>ReqnrollXNunit.Tests</RootNamespace>
-        <AssemblyName>ReqnrollXNunit.Tests</AssemblyName>
+        <AssemblyName>ReqnrollXNunit.Tests.Reqnroll</AssemblyName>
         <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
     </PropertyGroup>

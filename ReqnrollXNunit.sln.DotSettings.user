@@ -1,6 +1,6 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d5d426e7_002Dd883_002D48a8_002D94a1_002D220b95aa4532/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="StartTheCarWithEnoughFuel" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
-    &lt;TestId&gt;NUnit3x::1ECB6841-EB31-4AB9-A8FE-04427FC0A380::.NETFramework,Version=v4.8::ReqnrollXNunit.Tests.CarFeature.StartTheCarWithEnoughFuel&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::D6A129DB-5841-4FC6-98D7-6A38D1B85BDB::.NETFramework,Version=v4.8::ReqnrollXnunit.Tests.Classic.Tests&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
